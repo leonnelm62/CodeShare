@@ -1,0 +1,23 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 530px;
+    padding: 15px;
+    margin: auto;
+}
+
+.btn-lg {
+    width: 100%;
+}
+
+.dropdown-menu {
+    left: 1420px;
+}

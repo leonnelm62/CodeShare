@@ -1,0 +1,29 @@
+<form class="form-signin col-md-6" method="post">
+      {{# each errorMessages }}
+      <p class="alert alert-danger">{{ this.msg }}</p>
+      {{/each}}
+
+      <h1 class="text-center">Créez un nouveau compte</h1>
+      <br/>
+      <div class="form-group">
+            <label class="style"> <strong>Nom</strong> </label>
+            <input type="name" name="name" class="form-control" placeholder="Entrer votre nom" autofocus="">
+      </div>
+      <div class="form-group">
+            <label class="style"> <strong>Adresse Email</strong> </label>
+            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Entrer votre email"name="email">
+            <small class="form-text text-muted">Votre Email ne sera jamais partagé avec quelqu'un d'autre.</small>
+      </div>
+      <div class="form-group">
+            <label class="style"> <strong>Mot de passe</strong> </label>
+            <input type="password" name="password" class="form-control" placeholder="Entrer le mot de passe">
+      </div>
+      <div class="form-group">
+            <label class="style"> <strong>Confirmer le mot de passe</strong> </label>
+            <input type="password" name="confirmPassword" class="form-control" placeholder="Retaper le mot de passe">
+      </div> <br>
+      <h4 class="text-center">Ou</h4><br>
+      <a href="/auth/facebook" class="btn btn-lg btn-success btn-block">S'inscrire avec facebook</a>
+
+      <button type="submit" class="btn btn-lg btn-primary">Inscription</button>
+</form>
